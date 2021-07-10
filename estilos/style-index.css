@@ -1,15 +1,69 @@
+
+/* Cores: 
+    paleta de cores padrão do site
+        100%: #7a209c
+        75%: #89609e 
+        50%: #ec70e7
+        25%: #ffd2f2
+*/
 header {
-    background: #CCCCCC;
+    background:  #ffd2f2 ;
+    padding: 20px 0;
+    border-bottom: 1px solid #ec70e7;
+}
+
+.caixa{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.caixa h1{
+    color: #7a209c;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 54px;
+    
+}
+
+.caixa h1 a {
+    text-decoration: none;
+}
+nav {
+    position: absolute;
+    right: 0;
+    top: 15px; 
 }
 
 nav a {
     font-size: 24px;
-    color: #000000;
+    color: #7a209c;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
 nav li {
-    display: inline-block;
+    display: inline;
     margin-left: 15px;
+    align-items: top;
+    
+}
+
+nav a:hover {
+    font-size: 23px;
+    color: #7a209c;
+}
+
+
+.login{
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.login:hover{
+    font-size: 23px;
+    color: #7a209c;
+    border-color: #7a209c ;
 }
