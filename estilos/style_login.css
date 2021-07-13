@@ -16,10 +16,10 @@
     color: #323232;
     border: none;
 }
-textarea:focus, input:focus{
-    outline: none;
-  }
 
+html {
+    height: 100%
+}
 a {
     font-size: .8rem;
     text-decoration: none;
@@ -30,6 +30,10 @@ a:hover {
   }
 
 body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
     background: rgb(158,56,176);
     background: radial-gradient(circle, rgba(158,56,176,1) 0%, rgba(122,32,156,1) 42%, rgba(109,0,255,1) 100%);
 }
@@ -45,7 +49,6 @@ body {
     margin-top: 15vh; 
     border-radius: 10px;
     text-align: center;
-    box-shadow: 10px black
 }
 .login-container h1, h1 a{
     font-size: 2rem;
@@ -58,24 +61,31 @@ body {
 /* FORMULARIO Login e Senha */
 form {
     margin-top: 30p;
-    margin-bottom: 40px;
-}
-
-label, input {
-    display: block;
+    margin-bottom: 25px;
     width: 100%;
-    text-align: left;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
-label {
-    font-weight: bold;
+input, button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    border: none;
+    border-bottom: 2px solid black;    
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+
+    font-size: 1em;
+    
 }
 
 input {
-    border-bottom: 2px solid black;
     padding: 10px;
     font-size: 1rem;
-    margin-bottom: 20px;
 }
 
 input:focus {
@@ -87,7 +97,9 @@ input:focus {
     text-align: right
 }
 
-input[type=submit] {
+button {
+    width: 160px;
+    height: 40px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -97,14 +109,16 @@ input[type=submit] {
     color: #ffffff;
     background: rgb(109,0,255);
     cursor: pointer;
+    align-self: center;
 
 }
 
-input[type=submit]:hover {
+button:hover {
     background: rgba(158,56,176,1);
     transition: 2s;
 }
 
+/* Container das redes sociais */
 .social-container {
     margin-bottom: 20px;
 }
@@ -133,4 +147,34 @@ input[type=submit]:hover {
 
 .register-container p{
     margin-bottom: 10px;
+}
+
+div.input{
+    margin-bottom: 24px;
+    position: relative;
+}
+
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    transition: 0.4s;
+}
+
+input:focus ~ label, 
+input:valid ~ label{
+    transform: translateY( -24px);
+    font-size: .8rem;
+    letter-spacing: 0.1em;
+}
+
+.input span.error{
+    display: flex;
+    padding: 0;
+    color: red
+}
+.input span.error.active{
+    color: red;
+    padding: 0.2em;
+    font-size: 0.8em;
 }
