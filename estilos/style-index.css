@@ -6,30 +6,33 @@
         50%: #ec70e7
         25%: #ffd2f2
 */
+
+/* Estilização do Cabeçalho */
 header {
-    background:  #ffd2f2 ;
+    background:  #ffd2f2;
     padding: 20px 0;
     border-bottom: 1px solid #ec70e7;
-    position: sticky;
-    top: 0;
+    box-sizing: border-box;
+    /* position: sticky;
+    top: 0; */
 }
 
-.caixa{
+.caixa-cabecalho{
     position: relative;
     width: 1200px;
     margin: 0 auto;
-
+    box-sizing: border-box;
 }
 
-.caixa h1{
+.caixa-cabecalho h1{
     color: #7a209c;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 54px;
-    
+    letter-spacing: 1px;
 }
 
-.caixa h1 a {
+.caixa-cabecalho h1 a {
     text-decoration: none;
 }
 
@@ -44,21 +47,18 @@ nav a {
     color: #7a209c;
     text-decoration: none;
     font-weight: bold;
-    
 }
 
 nav li {
     display: inline;
     margin-left: 15px;
-    align-items: top;
-    
+    align-items: top
 }
 
 nav a:hover {
     font-size: 23px;
     color: #7a209c;
 }
-
 
 .login{
     border: 1px solid #000000;
@@ -71,16 +71,23 @@ nav a:hover {
     color: #7a209c;
     border-color: #7a209c ;
 }
-
+/* Conteúdo da Página */
 .apresentacao {
     padding: 10px;
 }
 
-.apresentacao h2{
-    font-size: 32px;
+.caixa-conteudo {
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.titulo{
+    font-size: 3em;
     color: #7a209c;
     font-weight: bold;
-    text-align: center
+    text-align: center;
 }
 
 .sobrenos {
@@ -88,53 +95,82 @@ nav a:hover {
     text-align: center;
     padding: 25px 0 50px;
 }
-
-.sobrenos h2 {
-    font-size: 64px;
-    color:  #7a209c;
-    font-weight: bold;
-    margin: 0 0 20px;
+.sobrenos p {
+    font-size: 3em;
+    text-align: justify;
+    margin: 50px 0 100px;
 }
-
-.sobrenos h3 {
-    font-size: 48px;
-    color: #ec70e7;
-    font-weight: bold;
+.sobrenos a i {
+    margin: 40px
 }
-
 .missao{
     background: #ffd2f2;
     text-align: center;
     padding: 25px 0 50px;
 }
 
-.missao h2 {
-    font-size: 64px;
-    color:  #7a209c;
-    font-weight: bold;
-    margin: 0 0 20px;
-}
-
-.missao h3 {
-    font-size: 48px;
-    color: #000000;
-    font-weight: bold;
-}
-
 .visao {
-    background: #7a209c;
+    background: #ec70e7;
     text-align: center;
     padding: 25px 0 50px;
 }
-.visao h2 {
-    font-size: 64px;
-    color:  #FFFFFF;
-    font-weight: bold;
-    margin: 0 0 20px;
+
+.condastro {
+    width: 100%;
+    display: flex;
+   
 }
 
-.visao h3 {
-    font-size: 48px;
-    color:  #ffd2f2;
-    font-weight: bold;
+.contratante, .freelance {
+    border: 2px solid #7a209c;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 1em
+}
+.contratante {
+    float: left;
+    width: 45%;
+    
+}
+
+.freelance {
+    overflow: hidden;
+    width: 45%;
+    
+}
+.contratante:hover, .freelance:hover {
+    font-size: +20px;
+}
+
+
+
+
+
+
+
+
+
+.mapa {
+    padding: 3em 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mapa h1 {
+    font-size: 2em;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.mapa p {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 0 1em;
+}
+
+.mapa-box {
+    width: 1200px;
+    margin: 0 auto;
 }
