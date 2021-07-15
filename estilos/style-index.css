@@ -113,6 +113,33 @@ nav li {
     margin: 1em 0 1em;
 }
 
+div.comofunciona {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    
+}
+article.empresa, article.freelancer{
+    box-sizing: border-box;
+    width: 45%;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 1em;
+    margin-left: 3em;
+    padding: 10px;
+    display: inline-block;
+}
+
+article.empresa p, article.freelancer p{
+    text-align: justify;
+    font-size: 1.5em;
+    margin: 1em 0;
+    
+}
+article.empresa li, article.freelancer li {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
 .sobrenos{
     width: 100%;
     background: #FFFFFF;
@@ -128,7 +155,6 @@ nav li {
     animation-name: jump;
     animation-iteration-count: infinite;
 }
-
 @keyframes jump {
     0% { transform: translate(-50%, -50%);}
     50% { transform: translate(-50%, -150%); }
