@@ -124,22 +124,16 @@ nav li {
     color: var(--main-color);
     margin: 40px;
 
-    /* montar a animação do icone para ficar pulando 
-    animation-duration: 3s; 
+    animation-duration: 5s; 
     animation-name: jump;
-    animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
 }
 
-/* @keyframes jump {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }    
-} */
+@keyframes jump {
+    0% { transform: translate(-50%, -50%);}
+    50% { transform: translate(-50%, -150%); }
+    100% { transform: translate(-50%, -50%);}
+}
 
 .missao, .visao, .valores {
     box-sizing: border-box;
