@@ -100,3 +100,15 @@ select {
     font-weight: bold;
     border-bottom: 2px solid #7a209c;
 }
+
+button{
+    align-self: left;
+    display: block;
+
+}
+.check p {
+    font-weight: bold
+
+}
+    
+
