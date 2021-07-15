@@ -23,14 +23,14 @@ header {
     box-sizing: border-box;
 }
 
-.caixa-cabecalho{
+div.caixa-cabecalho{
     position: relative;
     width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-.caixa-cabecalho h1 a{
+div.caixa-cabecalho h1 a{
     color: var(--main-color);
     text-transform: uppercase;
     font-weight: bold;
@@ -84,30 +84,30 @@ nav li {
 }
 
 /* Estilização do conteúdo main da página */
-.apresentacao {
+div.apresentacao {
     width: 100%;
     box-sizing: border-box;
 }
 
-.titulo{
+h1.titulo{
     font-size: 3em;
     color: var(--main-color);
     font-weight: bold;
     text-align: center;
 }
 
-.caixa-conteudo {
+div.caixa-conteudo {
     position: relative;
     width: 700px;
     margin: 0 auto;
     text-align: justify;
 }
 
-.caixa-conteudo .titulo {
+div.caixa-conteudo h1.titulo {
     margin-top: 1em;
 }
 
-.caixa-conteudo p {
+div.caixa-conteudo p {
     font-size: 3em;
     text-align: justify;
     margin: 1em 0 1em;
@@ -140,14 +140,14 @@ article.empresa li, article.freelancer li {
     margin-top: 10px;
     font-size: 1.5em;
 }
-.sobrenos{
+div.sobrenos{
     width: 100%;
     background: #FFFFFF;
     text-align: center;
     box-sizing: border-box;
 }
 
-.sobrenos a i {
+div.sobrenos a i {
     color: var(--main-color);
     margin: 40px;
 
@@ -161,21 +161,21 @@ article.empresa li, article.freelancer li {
     100% { transform: translate(-50%, -50%);}
 }
 
-.missao, .visao, .valores {
+div.missao, div.visao, div.valores {
     box-sizing: border-box;
     width: 100%;
     text-align: center;
     padding: 25px 0 50px;
 }
 
-.condastro {
+div.cadastro {
     box-sizing: border-box;
     width: 100%;
     display: flex;
    
 }
 
-.contratante, .freelance {
+div.contratante, div.freelance {
     border: 2px solid var(--main-color);
     margin-left: 15px;
     margin-right: 15px;
@@ -184,7 +184,7 @@ article.empresa li, article.freelancer li {
     text-align: center;
     margin-top: 4em
 }
-.contratante {
+div.contratante {
     float: left;
     width: 45%;
     
