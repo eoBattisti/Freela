@@ -178,3 +178,7 @@ input:valid ~ label{
     padding: 0.2em;
     font-size: 0.8em;
 }
+/* Adaptação da página para celulares */
+@media screen and (max-width: 480px){
+
+}

@@ -5,67 +5,120 @@
         <title>Freela</title>
         <link rel="stylesheet" href="estilos/reset.css">
         <link rel="stylesheet" href="estilos/style-index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
     <body>
         <header> 
-            <div class="caixa">
-                <h1><a href=index.html>Freela</a></h1>
+            <div class="caixa-cabecalho">
+                <h1><a href="#apresentacao">Freela</a></h1>
                 <nav>
                     <ul>                
                         <!-- Referenciar para uma parte da página onde estará o modelo de negócio da Empresa -->
-                        <li><a href="index.html">Como funciona?</a></li>
+                        <li><a href="#comofunciona">Como funciona?</a></li>
                         <!-- Referencia para Sobre a Freela -->
-                        <li><a href="#valores">Sobre a Freela</a></li>
+                        <li><a href="#sobrenos">Sobre a Freela</a></li>
                         <!-- Referencia para Atendimento -->
-                        <li><a href="">Atendimento</a></li>
+                        <li><a href="#atendimento">Atendimento</a></li>
                          <!-- Referencia para Login do Usuário -->
-                         <li><a href="login.html" class="login">Login</a></li>
+                         <li><a href="login.html">Login</a></li>
                          <!-- Referencia para Cadastro de Usuário -->
-                         <li><a href="">Cadastre-se</a></li>
+                         <li><a href="#cadastro">Cadastre-se</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <div class="apresentacao">
-                <h2>Proporcionando pareceria entre empreendedores e profissionais em todo o Brasil!</h2>
+            <div class="apresentacao" id="apresentacao" name="apresentacao">
+                <h1 class="titulo">Proporcionando pareceria entre empreendedores e profissionais em todo o Brasil!</h1>
             </div>
 
-            <div class="comofunciona">
-
+            <div class="comofunciona" id="comofunciona" name="comofunciona">
+                <article class="empresa">
+                    <h1 class="titulo">Para você empreendedor</h1>
+                    <p>Utilizando nosso aplicativo você conseguirá procurar e encontrar os melhores profissionais o mais perto de você. </p>
+                    <ul>
+                        <li>Você define o preço do serviço</li>
+                        <li>Estipula o perido para ser realizada a tarefa</li>
+                        <li>Pode definir requisitos para o serviço</li>
+                        <li>Feedback sobre o Freelancer</li>
+                    </ul>
+                    <p>
+                        E se você achou um freelancer fora da curva, contrate-o. Nunca se sabe se você terá a mesma oportunidades novamente </p>
+                    </p>
+                </article>
+                <article class="freelancer">
+                    <h1 class="titulo">Para você Freelancer</h1>
+                    <p>Aqui você encontrar as mais diferenciadas oportunidades de trabalho</p>
+                    <ul>
+                        <li>Você escolhe quais serviços deseja realizar</li>
+                        <li>Pode negociar preços</li>
+                        <li>Mostrar o seu portifólio para todos</li>
+                        <li>Dar um Feedback sobre o contratante</li>
+                    </ul>
+                    <p>
+                        Sempre se esforce, as suas chances de ser contratado por uma empresa aumentam
+                    </p>
+                </article>
             </div>
 
-            <div>
-                <div class="sobrenos" name="sobrenos" id="sobrenos">
-                    <h2>A Freela</h2>
-                    <h3>A Freela começou na idéa de amigos, acreditamos que as oportunidades de trabalho existem, e temos como
-                        nosso objetivo conectar profissionais e empreendedores </h3>
-                </div> 
+            <div class="sobrenos" name="sobrenos" id="sobrenos">
+                <div class="caixa-conteudo">
+                    <h1 class="titulo">A Freela</h1>
+                    <p>A Freela começou na idéa de amigos, acreditamos que as oportunidades de trabalho existem, e temos como
+                        nosso objetivo conectar profissionais e empreendedores através da nossa plataforma </p>
+                </div>
+                <a  href="#missao"><i class="fa fa-angle-double-down fa-2x"></i></a>
                 <div class="missao" name="missao" id="missao">
-                    <div class="caixa">
-                        <h2>Qual a nossa MISSÃO? </h2>
-                        <h3> Oferecer a sociedade uma plataforma totalmente segura e confiável para aumentar, desenvolver e facilitar a relação entre pessoas e empresas conectando-os</h3>
+                    <div class="caixa-conteudo">
+                        <h1 class="titulo">Qual a nossa MISSÃO? </h1>
+                        <p> Oferecer a sociedade uma plataforma totalmente segura e confiável para aumentar, desenvolver e facilitar a relação entre pessoas e empresas conectando-os</p>
                     </div>
+                    <a href="#visao"><i class="fa fa-angle-double-down fa-2x"></i></a>
                 </div>
                 <div class="visao" name='visao' id="visao">
-                    <div class="caixa">
-                        <h2>A nossa VISÃO</h2>
-                        <h3>Possuir uma plataforma de confiança e transparência para impulsionar o mercado de trabalho</h3>
-                    </div>>
+                    <div class="caixa-conteudo">
+                        <h1 class="titulo">A nossa VISÃO</h1>
+                        <p>Possuir uma plataforma de confiança e transparência para impulsionar o mercado de trabalho</p>
+                    </div>  
+                    <a  href="#valores"><i class="fa fa-angle-double-down fa-2x"></i></a>
                 </div>
                 <div class="valores" name="valores" id="valores">
-                    <div class="caixa">
-                        <h2>Os nossos VALORES</h2>
-                        <h3></h3>
+                    <div class="caixa-conteudo">
+                        <h1 class="titulo">Os nossos VALORES</h1>
+                        <p>A Freela tem como base fundamental intrínseca o foco no cliente tanto com os
+                            empreendedores como freelancers, proporcionando uma experiência e suporte fora da
+                            curva. Contribuir, ajudar e facilitar a comunicação entre os trabalhadores e as empresas
+                            solucionando o ruído que há entre as vagas de emprego e o acesso a elas.</p> 
                     </div>
+                    <a href="#atendimento"><i class="fa fa-angle-double-down fa-2x"></i></a>
                 </div>
                 
             </div>
 
-            <div class="atendimento">
+            <div class="atendimento" id="atendimento" name="atendimento">
 
             </div>
+            <div class="cadastro" name="cadastro" id="cadastro">
+                <h1 class="titulo"> Quero me cadastrar</h1>
+                <div class="contratante">
+                    <h1 class="titulo"> Quero contratar </h1>
+                    <p> Cadastre sua empresa ou até você que deseja apenas contratar serviços </p>
+                    <p> Clique <a href="register.html">aqui</a> 
+                </div>
+                <div class="freelance">
+                    <h1 class="titulo">Quero ser Freelance</h1>
+                    <p>Quero procurar e receber propostas de emprego</p>
+                    <p>Clique <a href="register.html">aqui</a></p>
+                </div>
+            </div>
+            <section class="mapa">
+                <h1 class="titulo">Nossa localização</h1>
+                <p>Caso você deseja nos fazer uma visita, aqui está o nosso QG!</p>
+                <div class="mapa-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1865.0174738363514!2d-53.741978366232644!3d-24.73209146444405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3958130f9dfcd%3A0xca95902a8ada2ad9!2sAssocia%C3%A7%C3%A3o%20Comercial%20e%20Empresarial%20de%20Toledo!5e0!3m2!1spt-BR!2sbr!4v1626202199320!5m2!1spt-BR!2sbr" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
         </main>
 
         <footer>
