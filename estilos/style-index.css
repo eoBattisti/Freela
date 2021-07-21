@@ -18,10 +18,18 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    color: var(--font-color);
+}
+
+li {
+    color: var(--font-color);
+}
 /* Estilização do Cabeçalho */
 header {
+    box-sizing: border-box;
     width: 100%;
-    height: auto;
+    height: 90px;
     background:  #FFFFFF;
     padding: 20px 0;
     border-bottom: 2px solid var(--main-color);
@@ -191,15 +199,47 @@ img.image-right{
     height: 600px;
     float: right;
 }
-
+/* CSS "SOBRE NÓS" DO SITE */
 div.sobrenos{
     width: 100%;
     background: #FFFFFF;
     text-align: center;
     box-sizing: border-box;
+    padding: 25px 0 50px;
     clear: both;
 }
+div.missao, div.visao, div.valores {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0 50px;
+}
+div.missao .titulo::after, 
+div.visao .titulo::after, 
+div.valores .titulo::after, 
+div.sobrenos .titulo::after 
+{
+    display: block;
+    content: '';
+    width: 700px;
+    height: 3px;
+    background: currentColor;
+    margin: 15px auto;
+}
 
+/* ANIMAÇÃO DO CONTEÚDO SOBRE NÓS */
+.anime {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: .5s;
+}
+
+.anime-start {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/* ANIMAÇÃO DO ICONE - SOBRE NÓS */
 div.sobrenos a i {
     color: var(--main-color);
     margin: 40px;
@@ -215,13 +255,7 @@ div.sobrenos a i {
     100% { transform: translate(-50%, -50%);}
 }
 
-div.missao, div.visao, div.valores {
-    box-sizing: border-box;
-    width: 100%;
-    text-align: center;
-    padding: 25px 0 50px;
-}
-
+/* CSS DE CADASTRE-SE DO SITE */
 div.cadastro {
     box-sizing: border-box;
     width: 100%;
@@ -252,6 +286,8 @@ div.contratante {
 /* .contratante:hover, .freelance:hover {
     /* fazer algo} */
 
+
+/* CSS MAPA DO SITE */
 .mapa {
     padding: 3em 0;
     margin-left: auto;
@@ -274,14 +310,3 @@ div.contratante {
     margin: 0 auto;
 }
 
-/* ANIMAÇÃO DO CONTEÚDO SOBRE NÓS */
-.anime {
-    opacity: 0;
-    transform: translate3d(-100px, 0, 0);
-    transition: .5s;
-}
-
-.anime-start {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
