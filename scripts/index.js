@@ -1,3 +1,30 @@
+// Scroll dos links no menu
+$('nav a').click(function(e){
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			menuHeight = $('header').innerHeight(),
+			targetOffset = $(id).offset().top;
+	$('html, body').animate({
+		scrollTop: targetOffset - menuHeight
+	});
+});
+
+// Scroll dos icones na área "Sobre nós" do site
+$('a').click(function(e){
+	e.preventDefault();
+	var id = $(this).attr('href'),
+	menuHeight = $('header').innerHeight(),
+	targetOffset = $(id).offset().top;
+
+	$('html, body').animate({
+		scrollTop: targetOffset - menuHeight
+	}, 500);
+});
+
+
+
+
+
 debounce = function(func, wait, immediate) {
 	var timeout;
 	return function() {
