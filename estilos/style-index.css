@@ -7,20 +7,28 @@
 */
 /* Váriaveis Globalis  */
 :root {
-    --main-color: #7a209c;
+    --main-color: #531669;
     --secondary-color: #89609e;
     --third-color: #ec70e7;
     --fourth-color: #ffd2f2;
+    --font-color: #2b262e;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Estilização do Cabeçalho */
 header {
     width: 100%;
-    height: 100px;
+    height: auto;
     background:  #FFFFFF;
     padding: 20px 0;
     border-bottom: 2px solid var(--main-color);
     box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 div.caixa-cabecalho{
@@ -57,7 +65,13 @@ nav li:nth-child(4)  {
     border-radius: 15px;
     box-sizing: border-box;
 }
+.fa-user {
+    margin-right: 10px;
+}
 
+.fa-user-plus {
+    margin-right: 10px;
+}
 nav li:nth-child(4):hover {
     border-color: #600083;
 }
@@ -119,10 +133,9 @@ div.comofunciona {
     height: auto;
     
 }
-article.empresa, article.freelancer{
+article.empresa{
     box-sizing: border-box;
     width: 45%;
-    border: 2px solid black;
     border-radius: 15px;
     margin-top: 1em;
     margin-left: 3em;
@@ -130,21 +143,61 @@ article.empresa, article.freelancer{
     display: inline-block;
 }
 
-article.empresa p, article.freelancer p{
+article.empresa p {
     text-align: justify;
     font-size: 1.5em;
     margin: 1em 0;
+    float: left;
+    
     
 }
-article.empresa li, article.freelancer li {
+article.empresa li {
+    margin-top: 10px;
+    font-size: 1.5em;
+    float: left;
+}
+
+img.image-left{
+    width: 600px;
+    height: 600px;
+    float: left;
+}
+
+article.freelancer p{
+    text-align: justify;
+    font-size: 1.5em;
+    margin: 1em 0;
+}   
+
+article.freelancer li {
     margin-top: 10px;
     font-size: 1.5em;
 }
+
+article.freelancer {
+    box-sizing: border-box;
+    width: 45%;
+    border-radius: 15px;
+    margin-top: 1em;
+    margin-left: 3em;
+    padding: 10px;
+    display: inline-block;
+    clear: both;
+ 
+}
+
+img.image-right{
+    width: 600px;
+    height: 600px;
+    float: right;
+}
+
 div.sobrenos{
     width: 100%;
     background: #FFFFFF;
     text-align: center;
     box-sizing: border-box;
+    clear: both;
 }
 
 div.sobrenos a i {
@@ -154,6 +207,7 @@ div.sobrenos a i {
     animation-duration: 5s; 
     animation-name: jump;
     animation-iteration-count: infinite;
+    float: none;
 }
 @keyframes jump {
     0% { transform: translate(-50%, -50%);}
@@ -219,3 +273,4 @@ div.contratante {
     width: 1200px;
     margin: 0 auto;
 }
+

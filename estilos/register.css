@@ -48,7 +48,7 @@ textarea:focus, input:focus{
     color: #FFF;
 }
 .tab-content {
-    /* display: none; */
+    display: none;
     position: absolute;
     width: 600px;
     height: 320px;
@@ -69,8 +69,6 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    
 }
 
 label, input {
@@ -104,11 +102,10 @@ select {
 button{
     align-self: left;
     display: block;
-
 }
+
 .check p {
     font-weight: bold
-
 }
     
 
