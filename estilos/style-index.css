@@ -129,13 +129,15 @@ div.caixa-conteudo {
     height: auto;
     margin: 0 auto;
     text-align: justify;
-    padding: 20px;
-    border: 2px solid var(--main-color);
     border-radius: 15px;
     box-shadow: 0px 0px 20px 0px rgb(177, 177, 177);
     background: #FFFFFF;
 }
-
+div.caixa-conteudo img{
+    border-radius: 15px;
+    width: 400px;
+    height: auto;
+}
 div.caixa-conteudo2 {
     box-sizing: border-box;
     position: relative;
@@ -143,7 +145,7 @@ div.caixa-conteudo2 {
     height: auto;
     margin: 0 auto;
     text-align: justify;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 div.caixa-conteudo h1.titulo {
@@ -154,6 +156,7 @@ div.caixa-conteudo p {
     font-size: 3em;
     text-align: justify;
     margin: 1em 0 1em;
+    padding: 20px;
 }
 
 div.comofunciona {
