@@ -10,7 +10,7 @@ $('nav a').click(function(e){
 });
 
 // Scroll dos icones na área "Sobre nós" do site
-$('a').click(function(e){
+$('i a').click(function(e){
 	e.preventDefault();
 	var id = $(this).attr('href'),
 	menuHeight = $('header').innerHeight(),
@@ -20,10 +20,6 @@ $('a').click(function(e){
 		scrollTop: targetOffset - menuHeight
 	}, 500);
 });
-
-
-
-
 
 debounce = function(func, wait, immediate) {
 	var timeout;
@@ -39,7 +35,6 @@ debounce = function(func, wait, immediate) {
 		if (callNow) func.apply(context, args);
 	};
 };
-
 
 (function(){
 	var $target = $('.anime'),

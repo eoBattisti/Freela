@@ -1,137 +1,282 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Freela</title>
-        <link rel="stylesheet" href="estilos/reset.css">
-        <link rel="stylesheet" href="estilos/style-index.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="scripts/jquery-3.6.0.min.js"></script>
-        <script src="scripts/index.js" defer></script>
-    </head>
-    <body>
-        <header> 
-            <div class="caixa-cabecalho">
-                <h1><a href="#apresentacao">Freela</a></h1>
-                <nav>
-                    <ul>                
-                        <!-- Referenciar para uma parte da página onde estará o modelo de negócio da Empresa -->
-                        <li><a href="#comofunciona">Como funciona?</a></li>
-                        <!-- Referencia para Sobre a Freela -->
-                        <li><a href="#sobrenos">Sobre a Freela</a></li>
-                        <!-- Referencia para Atendimento -->
-                        <li><a href="#atendimento">Atendimento</a></li>
-                         <!-- Referencia para Login do Usuário -->
-                         <li><a href="login.html"><i class="fa fa-user"></i>Login</a></li>
-                         <!-- Referencia para Cadastro de Usuário -->
-                         <li><a href="#cadastro"><i class="fa fa-user-plus"></i>Cadastre-se</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div class="apresentacao" id="apresentacao" name="apresentacao">
-                <h1 class="titulo">Proporcionando pareceria entre empreendedores e profissionais em todo o Brasil!</h1>
 
-            <div class="comofunciona" id="comofunciona" name="comofunciona">
-                <div style="box-sizing: border-box; width: 1200px; height:auto; margin: 50px 0">
-                        <img class="image-left" src="imagens/empresa.jpg"/>
-                    <article class="empresa">
-                        <h1 class="titulo">Para você empreendedor</h1>
-                        <p>Utilizando nosso aplicativo você conseguirá procurar e encontrar os melhores profissionais o mais perto de você. </p>
-                        <ul>
-                            <li>Você define o preço do serviço</li>
-                            <li>Estipula o perido para ser realizada a tarefa</li>
-                            <li>Pode definir requisitos para o serviço</li>
-                            <li>Feedback sobre o Freelancer</li>
-                        </ul>
-                        <p>
-                            E se você achou um freelancer fora da curva, contrate-o. Nunca se sabe se você terá a mesma oportunidades novamente </p>
-                        </p>
-                    </article>
-                </div>
-                <div style="box-sizing: border-box; width: 100%; height:auto; margin: 50px 0">  
-                    <img class="image-right" src="imagens/freelancer.jpg"/>
-                    <article class="freelancer">
-                        
-                        <h1 class="titulo">Para você Freelancer</h1>
-                        <p>Aqui você encontrar as mais diferenciadas oportunidades de trabalho</p>
-                        <ul>
-                            <li>Você escolhe quais serviços deseja realizar</li>
-                            <li>Pode negociar preços</li>
-                            <li>Mostrar o seu portifólio para todos</li>
-                            <li>Dar um Feedback sobre o contratante</li>
-                        </ul>
-                        <p>
-                            Sempre se esforce, as suas chances de ser contratado por uma empresa aumentam
-                        </p>
-                    </article>
-                </div>
-                
-            </div>
-
-            <div class="sobrenos" name="sobrenos" id="sobrenos">
-                <div class="caixa-conteudo anime">
-                    <h1 class="titulo">A Freela</h1>
-                    <p>A Freela começou na idéa de amigos, acreditamos que as oportunidades de trabalho existem, e temos como
-                        nosso objetivo conectar profissionais e empreendedores através da nossa plataforma </p>
-                </div>
-                <a  href="#missao"><i class="fa fa-angle-double-down fa-2x"></i></a>
-                <div class="missao anime" name="missao" id="missao">
-                    <div class="caixa-conteudo">
-                        <h1 class="titulo">Qual a nossa MISSÃO? </h1>
-                        <p> Oferecer a sociedade uma plataforma totalmente segura e confiável para aumentar, desenvolver e facilitar a relação entre pessoas e empresas conectando-os</p>
-                    </div>
-                    <a href="#visao"><i class="fa fa-angle-double-down fa-2x"></i></a>
-                </div>
-                <div class="visao anime" name='visao' id="visao">
-                    <div class="caixa-conteudo">
-                        <h1 class="titulo">A nossa VISÃO</h1>
-                        <p>Possuir uma plataforma de confiança e transparência para impulsionar o mercado de trabalho</p>
-                    </div>  
-                    <a  href="#valores"><i class="fa fa-angle-double-down fa-2x"></i></a>
-                </div>
-                <div class="valores anime" name="valores" id="valores">
-                    <div class="caixa-conteudo">
-                        <h1 class="titulo">Os nossos VALORES</h1>
-                        <p>A Freela tem como base fundamental intrínseca o foco no cliente tanto com os
-                            empreendedores como freelancers, proporcionando uma experiência e suporte fora da
-                            curva. Contribuir, ajudar e facilitar a comunicação entre os trabalhadores e as empresas
-                            solucionando o ruído que há entre as vagas de emprego e o acesso a elas.</p> 
-                    </div>
-                    <a href="#atendimento"><i class="fa fa-angle-double-down fa-2x"></i></a>
-                </div>
-                
-            </div>
-
-            <div class="atendimento" id="atendimento" name="atendimento">
-
-            </div>
-            <div class="cadastro" name="cadastro" id="cadastro">
-                <h1 class="titulo"> Quero me cadastrar</h1>
-                <div class="contratante">
-                    <h1 class="titulo"> Quero contratar </h1>
-                    <p> Cadastre sua empresa ou até você que deseja apenas contratar serviços </p>
-                    <p> Clique <a href="register.html">aqui</a> 
-                </div>
-                <div class="freelance">
-                    <h1 class="titulo">Quero ser Freelance</h1>
-                    <p>Quero procurar e receber propostas de emprego</p>
-                    <p>Clique <a href="register.html">aqui</a></p>
-                </div>
-            </div>
-            <section class="mapa">
-                <h1 class="titulo">Nossa localização</h1>
-                <p>Caso você deseja nos fazer uma visita, aqui está o nosso QG!</p>
-                <div class="mapa-box">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1865.0174738363514!2d-53.741978366232644!3d-24.73209146444405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3958130f9dfcd%3A0xca95902a8ada2ad9!2sAssocia%C3%A7%C3%A3o%20Comercial%20e%20Empresarial%20de%20Toledo!5e0!3m2!1spt-BR!2sbr!4v1626202199320!5m2!1spt-BR!2sbr" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Freela</title>
     
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/style-index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+</head>
+
+<body>
+    <header> <!-- Header -->
+        <div class="caixa-cabecalho">
+            <h1><a href="#apresentacao">Freela</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#comofunciona">Como funciona?</a></li>
+                    <li><a href="#sobrenos">Sobre a Freela</a></li>
+                    <li><a href="#atendimento">Atendimento</a></li>
+                    <li><a href="login.html"><i class="fa fa-user"></i>Login</a></li>
+                    <li><a href="#cadastro"><i class="fa fa-user-plus"></i>Cadastre-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> <!--END Header -->
+    <main>
+        <div class="apresentacao" id="apresentacao" name="apresentacao">
+            <h1 class="titulo">Proporcionando pareceria entre empreendedores e profissionais em todo o Brasil!</h1>
+        <div class="categorias"> <!-- Categorias -->
+            <div class="container owl-carousel"> <!-- Container dos Cards-->
+                <div class="card"> <!-- Card de Saúde -->
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="imagens/heartbeat.png">
+                            <h3>Saúde</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Você pode encontrar profissionais formados na área tanto para os cuidados do corpo quanto a mente</p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                    </div>
+                </div> <!-- END Card de Saúde -->
+                <div class="card"> <!-- Card de Tecnologia-->
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="imagens/data.png">
+                            <h3>Tecnologia</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p> Você pode encontrar profissionais formados nas áreas de programação, design, marketing digital, editores 
+                                de aúdio e video, etc.
+                            </p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                    </div>
+                </div> <!-- END Card de Tecnologia-->
+                <div class="card"> <!-- Card de Estética-->
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="imagens/maquiagem.png">
+                            <h3>Estética</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Você encontra serviços de bronzeamento, depilação, manicures, maquiadoras, entre outros.</p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                    </div>
+                </div> <!-- END Card de Estética -->
+                <div class="card"> <!-- Card  de Restaurantes-->
+                    <div class="face face1">
+                        <div class="content">
+                            <img
+                                src="imagens/restaurant-menu.png">
+                            <h3>Restaurantes</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Procurando por garçons, bartenders, cozinheiros, nesa categoria você pode encontra-los</p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                    </div>
+                </div> <!--END Card de  Restaurantes -->
+                <div class="card"> <!-- Card de Reparos-->
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="imagens/tool-box.png">
+                            <h3>Reparos</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Você pode encontrar encanadores, eletricistas, pintores, chaveiros entre outros profissionais da área</p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                    </div>
+                </div> <!--END Card de Reparos-->
+                <div class="card"> <!-- Card de Aulas-->
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="imagens/open-book.png">
+                            <h3>Aulas</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Você pode encontrar profissionais no ensino de idiomas, professores particulares, 
+                                preparatório para concursos, entre outros</p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                    </div>
+                </div> <!--END Card de Reparos-->
+                <div class="card"> <!-- Card de Serviços Domésticos-->
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="imagens/house.png">
+                            <h3>Serviços <br>Domésticos</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Aqui você encontra desde profissionais para cuidar da sua casa quanto de seu pet</p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                    </div>
+                </div><!--END Card Serviços Domésticos-->
+            </div> <!--End Container dos Cards-->
+        </div> <!--END Categorias-->
+        <div class="comofunciona" id="comofunciona" name="comofunciona"> <!-- Como funciona -->
+            <div class="caixa-conteudo2"> <!-- Como funciona para a empresa -->
+                <img class="image-left" src="imagens/empresa.jpg" />
+                <article class="empresa">
+                    <h1 class="titulo">Para você empreendedor</h1>
+                    <p>Utilizando nosso aplicativo você conseguirá procurar e encontrar os melhores profissionais o
+                        mais perto de você. 
+                    </p>
+                </article>
+            </div> <!-- END Como funciona para a empresa -->
+            <div class="caixa-conteudo2" style="clear: both; text-align: center;"> <!-- Beneficios -->
+                <div class="beneficio">
+                    <img src="imagens/price-tag.png"/>
+                    <span class="caption">Você define o preço do serviço</span>
+                </div>
+                <div class="beneficio">
+                    <img src="imagens/sand-clock.png"/>
+                    <span class="caption">Estipula o tempo da tarefa</span>
+                </div>
+                <div class="beneficio">
+                    <img src="imagens/requisitos.png"/>
+                    <span class="caption">Pode definir requisitos para o serviço</span>
+                </div>
+                <div class="beneficio">
+                    <img src="imagens/feedback.png"/>
+                    <span class="caption">Feedback sobre o Freelancer</span>
+                </div>
+
+                <p>
+                    &#42 E se você achou um freelancer fora da curva, contrate-o. Nunca se sabe se você terá a mesma
+                    oportunidades novamente </p>
+                </p>
+            </div> <!--END Beneficios -->
+            <div class="caixa-conteudo2"> <!-- Como funciona para o Frelancer -->
+                </article>
+                <img class="image-right" src="imagens/freelancer.jpg" />
+                <article class="freelancer">
+                    <h1 class="titulo">Para você Freelancer</h1>
+                    <p>Aqui você encontrar as mais diferenciadas oportunidades de trabalho</p>
+                </article>
+            </div> <!--END Como funciona para o Frelancer -->
+                <div class="caixa-conteudo2" style="clear: both; text-align: center;"> <!-- Beneficios -->
+                    <div class="beneficio">
+                        <img src="imagens/select.png"/>
+                        <span class="caption">Você escolhe quais serviços deseja realizar</span>
+                    </div>
+                    <div class="beneficio">
+                        <img src="imagens/negociar.png"/>
+                        <span class="caption">Pode negociar preços</span>
+                    </div>
+                    <div class="beneficio">
+                        <img src="imagens/resumo.png"/>
+                        <span class="caption">Mostrar o seu portifólio para todos</span>
+                    </div>
+                    <div class="beneficio">
+                        <img src="imagens/money-bag.png"/>
+                        <span class="caption">100% do dinheiro do serviço é seu</span>
+                    </div>
+                </div> <!--END Beneficios-->
+        </div> <!--END Como funciona-->
+        <div class="sobrenos" name="sobrenos" id="sobrenos">
+            <div class="caixa-conteudo anime">
+                <h1 class="titulo">A Freela</h1>
+                <p>A Freela começou na idéa de amigos, acreditamos que as oportunidades de trabalho existem, e
+                    temos
+                    como
+                    nosso objetivo conectar profissionais e empreendedores através da nossa plataforma </p>
+            </div>
+            <a href="#missao"><i class="fa fa-angle-double-down fa-2x"></i></a>
+            <div class="missao anime" name="missao" id="missao">
+                <div class="caixa-conteudo">
+                    <h1 class="titulo">Qual a nossa MISSÃO? </h1>
+                    <p> Oferecer a sociedade uma plataforma totalmente segura e confiável para aumentar,
+                        desenvolver
+                        e facilitar a relação entre pessoas e empresas conectando-os</p>
+                </div>
+                <a href="#visao"><i class="fa fa-angle-double-down fa-2x"></i></a>
+            </div>
+            <div class="visao anime" name='visao' id="visao">
+                <div class="caixa-conteudo">
+                    <h1 class="titulo">A nossa VISÃO</h1>
+                    <p>Possuir uma plataforma de confiança e transparência para impulsionar o mercado de
+                        trabalho
+                    </p>
+                </div>
+                <a href="#valores"><i class="fa fa-angle-double-down fa-2x"></i></a>
+            </div>
+            <div class="valores anime" name="valores" id="valores">
+                <div class="caixa-conteudo">
+                    <h1 class="titulo">Os nossos VALORES</h1>
+                    <p>A Freela tem como base fundamental intrínseca o foco no cliente tanto com os
+                        empreendedores como freelancers, proporcionando uma experiência e suporte fora da
+                        curva. Contribuir, ajudar e facilitar a comunicação entre os trabalhadores e as empresas
+                        solucionando o ruído que há entre as vagas de emprego e o acesso a elas.</p>
+                </div>
+                <a href="#atendimento"><i class="fa fa-angle-double-down fa-2x"></i></a>
+            </div>
+
+        </div>
+
+        <div class="atendimento" id="atendimento" name="atendimento">
+
+        </div>
+        <div class="cadastro" name="cadastro" id="cadastro">
+            <h1 class="titulo"> Quero me cadastrar</h1>
+            <div class="contratante">
+                <h1 class="titulo"> Quero contratar </h1>
+                <p> Cadastre sua empresa ou até você que deseja apenas contratar serviços </p>
+                <p> Clique <a href="register.html">aqui</a>
+            </div>
+            <div class="freelance">
+                <h1 class="titulo">Quero ser Freelance</h1>
+                <p>Quero procurar e receber propostas de emprego</p>
+                <p>Clique <a href="register.html">aqui</a></p>
+            </div>
+        </div>
+        <section class="mapa">
+            <h1 class="titulo">Nossa localização</h1>
+            <p>Caso você deseja nos fazer uma visita, aqui está o nosso QG!</p>
+            <div class="mapa-box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1865.0174738363514!2d-53.741978366232644!3d-24.73209146444405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3958130f9dfcd%3A0xca95902a8ada2ad9!2sAssocia%C3%A7%C3%A3o%20Comercial%20e%20Empresarial%20de%20Toledo!5e0!3m2!1spt-BR!2sbr!4v1626202199320!5m2!1spt-BR!2sbr"
+                    width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        $('.container').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+
+        });
+    </script>
+</body>
+
 </html>
