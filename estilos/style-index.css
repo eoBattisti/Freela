@@ -17,6 +17,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 body {
     background-color: var(--background-color);
@@ -307,7 +308,7 @@ div.cadastro button {
     border-radius: 15px;
     padding: 10px;
     margin-top: 50px;
-    background: var(--main-color);
+    background: radial-gradient(circle, rgba(158,56,176,1) 0%, rgba(122,32,156,1) 42%, rgba(109,0,255,1) 100%);
     color: #FFF;
     text-decoration: none;
     width: 200px;
