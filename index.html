@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freela</title>
     
     <script src="scripts/jquery-3.6.0.min.js"></script>
@@ -14,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,16 +27,30 @@
                     <li><a href="#comofunciona">Como funciona?</a></li>
                     <li><a href="#sobrenos">Sobre a Freela</a></li>
                     <li><a href="#atendimento">Atendimento</a></li>
-                    <li><a href="login.html"><i class="fa fa-user"></i>Login</a></li>
-                    <li><a href="#cadastro"><i class="fa fa-user-plus"></i>Cadastre-se</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><button onclick="window.location.href='login.html'"><i class="fa fa-user"></i>Login</button></li>
+                    <li><button style="color: #FFF; border: 2px solid var(--primary-color-600); border-radius: 5px; padding: 10px; background: var(--primary-color-600)" onclick="window.location.href='register.html'"><i class="fa fa-user-plus"></i>Cadastre-se</button></li>
                 </ul>
             </nav>
         </div>
     </header> <!--END Header -->
     <main>
-        <div class="apresentacao" id="apresentacao" name="apresentacao">
-            <h1 class="titulo">Proporcionando pareceria entre empreendedores e profissionais em todo o Brasil!</h1>
-        <div class="categorias"> <!-- Categorias -->
+        <div class="apresentacao" style="margin-top: 40px" id="apresentacao" name="apresentacao">
+            <div class="caixa-conteudo2" style="display: flex; align-items: flex-start; flex-direction: row; flex-wrap: nowrap; align-content: space-between;">
+                <img class="image-left" src="imagens/apresentação.png"/>
+                <div class="content-text">   
+                    <h1 class="titulo">A Freela, é a solução em suas mãos!</h1>
+                    <p> através do nosso aplicativo você encontra profissionais freelancers, dispostos a solucionar 
+                        seu problema, na palma da sua mão ou no seu computador, você escolhe
+                    </p>
+                </div> 
+            </div>
+        </div>
+        <div class="categorias" style="clear:both"> <!-- Categorias -->
+            <h1 class="titulo">Áreas de atuação</h1>
             <div class="container owl-carousel"> <!-- Container dos Cards-->
                 <div class="card"> <!-- Card de Saúde -->
                     <div class="face face1">
@@ -47,7 +62,7 @@
                     <div class="face face2">
                         <div class="content">
                             <p>Você pode encontrar profissionais formados na área tanto para os cuidados do corpo quanto a mente</p>
-                            <a href="#">Leia mais</a>
+                            <a href="error.html">Leia mais</a>
                         </div>
                     </div>
                 </div> <!-- END Card de Saúde -->
@@ -63,7 +78,7 @@
                             <p> Você pode encontrar profissionais formados nas áreas de programação, design, marketing digital, editores 
                                 de aúdio e video, etc.
                             </p>
-                            <a href="#">Leia mais</a>
+                            <a href="error.html">Leia mais</a>
                         </div>
                     </div>
                 </div> <!-- END Card de Tecnologia-->
@@ -77,7 +92,7 @@
                     <div class="face face2">
                         <div class="content">
                             <p>Você encontra serviços de bronzeamento, depilação, manicures, maquiadoras, entre outros.</p>
-                            <a href="#">Leia mais</a>
+                            <a href="error.html">Leia mais</a>
                         </div>
                     </div>
                 </div> <!-- END Card de Estética -->
@@ -92,7 +107,7 @@
                     <div class="face face2">
                         <div class="content">
                             <p>Procurando por garçons, bartenders, cozinheiros, nesa categoria você pode encontra-los</p>
-                            <a href="#">Leia mais</a>
+                            <a href="error.html">Leia mais</a>
                         </div>
                     </div>
                 </div> <!--END Card de  Restaurantes -->
@@ -106,7 +121,7 @@
                     <div class="face face2">
                         <div class="content">
                             <p>Você pode encontrar encanadores, eletricistas, pintores, chaveiros entre outros profissionais da área</p>
-                            <a href="#">Leia mais</a>
+                            <a href="error.html">Leia mais</a>
                         </div>
                     </div>
                 </div> <!--END Card de Reparos-->
@@ -121,7 +136,7 @@
                         <div class="content">
                             <p>Você pode encontrar profissionais no ensino de idiomas, professores particulares, 
                                 preparatório para concursos, entre outros</p>
-                            <a href="#">Leia mais</a>
+                            <a href="error.html">Leia mais</a>
                         </div>
                     </div>
                 </div> <!--END Card de Reparos-->
@@ -135,15 +150,18 @@
                     <div class="face face2">
                         <div class="content">
                             <p>Aqui você encontra desde profissionais para cuidar da sua casa quanto de seu pet</p>
-                            <a href="#">Leia mais</a>
+                            <a href="error.html">Leia mais</a>
                         </div>
                     </div>
                 </div><!--END Card Serviços Domésticos-->
             </div> <!--End Container dos Cards-->
         </div> <!--END Categorias-->
         <div class="comofunciona" id="comofunciona" name="comofunciona"> <!-- Como funciona -->
-            <div class="caixa-conteudo2"> <!-- Como funciona para a empresa -->
-                <img class="image-left" src="imagens/empresa.jpg" />
+            <div class="caixa-conteudo2" style="display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;"> <!-- Como funciona para a empresa -->
+                <img class="image-left" src="imagens/empresa.png" />
                 <article class="empresa">
                     <h1 class="titulo">Para você empreendedor</h1>
                     <p>Utilizando nosso aplicativo você conseguirá procurar e encontrar os melhores profissionais o
@@ -151,7 +169,7 @@
                     </p>
                 </article>
             </div> <!-- END Como funciona para a empresa -->
-            <div class="caixa-conteudo2" style="clear: both; text-align: center;"> <!-- Beneficios -->
+            <div class="caixa-conteudo2" style="display: flex; flex-wrap: wrap; align-content: stretch; justify-content: center;"> <!-- Beneficios -->
                 <div class="beneficio">
                     <img src="imagens/price-tag.png"/>
                     <span class="caption">Você define o preço do serviço</span>
@@ -174,15 +192,19 @@
                     oportunidades novamente </p>
                 </p>
             </div> <!--END Beneficios -->
-            <div class="caixa-conteudo2"> <!-- Como funciona para o Frelancer -->
+            <div class="caixa-conteudo2" style="display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;"> <!-- Como funciona para o Frelancer -->
                 </article>
-                <img class="image-right" src="imagens/freelancer.jpg" />
+                
                 <article class="freelancer">
                     <h1 class="titulo">Para você Freelancer</h1>
                     <p>Aqui você encontrar as mais diferenciadas oportunidades de trabalho</p>
                 </article>
+                <img class="image-right" src="imagens/freelancer.png" />
             </div> <!--END Como funciona para o Frelancer -->
-                <div class="caixa-conteudo2" style="clear: both; text-align: center;"> <!-- Beneficios -->
+                <div class="caixa-conteudo2" style="display: flex; flex-wrap: wrap; align-content: stretch; justify-content: center;"> <!-- Beneficios -->
                     <div class="beneficio">
                         <img src="imagens/select.png"/>
                         <span class="caption">Você escolhe quais serviços deseja realizar</span>
@@ -202,7 +224,9 @@
                 </div> <!--END Beneficios-->
         </div> <!--END Como funciona-->
         <div class="sobrenos" name="sobrenos" id="sobrenos">
-            <div class="caixa-conteudo anime" style="display: flex;">
+            <div class="caixa-conteudo anime" style="display: flex;
+            flex-direction: row;
+            align-items: flex-start;">
                 <div style="background: var(--main-color); border-radius: 15px 0 0 15px; padding: 10px;">
                     <img src="imagens/octopus.png"/>
                 </div>
@@ -215,7 +239,9 @@
             
             <a href="#missao"><i class="fa fa-angle-double-down fa-2x"></i></a>
             <div class="missao anime" name="missao" id="missao">
-                <div class="caixa-conteudo" style="display: flex;">
+                <div class="caixa-conteudo" style="display: flex;
+                flex-direction: row;
+                align-items: flex-start;">">
                     <div style="background: var(--main-color); border-radius: 15px 0 0 15px; padding: 10px;">
                         <img src="imagens/alvo.png"/>
                     </div>
@@ -230,7 +256,9 @@
                 <a href="#visao"><i class="fa fa-angle-double-down fa-2x"></i></a>
             </div>
             <div class="visao anime" name='visao' id="visao">
-                <div class="caixa-conteudo" style="display: flex;">
+                <div class="caixa-conteudo" style="display: flex;
+                flex-direction: row;
+                align-items: flex-start;">
                     <div style="background: var(--main-color); border-radius: 15px 0 0 15px; padding: 10px;">
                         <img src="imagens/incremento.png"/>
                     </div>
@@ -243,7 +271,9 @@
             </div>
                 <a href="#valores"><i class="fa fa-angle-double-down fa-2x"></i></a>
             <div class="valores anime" name="valores" id="valores">
-                <div class="caixa-conteudo" style="display: flex;">
+                <div class="caixa-conteudo" style="display: flex;
+                flex-direction: row;
+                align-items: flex-start;">
                     <div style="background: var(--main-color); border-radius: 15px 0 0 15px; padding: 10px;">
                         <img src="imagens/target.png"/>
                     </div>
@@ -260,39 +290,116 @@
 
         </div>
 
-        <div class="atendimento" id="atendimento" name="atendimento">
+        <div class="tb-conosco">
+            <div class="caixa-conteudo2" style="display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;">
+                <div>
+                    <img style="width: 500px;
+                    height: 500px;
+                    position: relative;
+                    left: 200px;" src="imagens/Wavy_Bus-32_Single-05.png">
+    
+                </div>
+                <div style="background: var(--secondary-color-800);
+                width: 500px;
+                text-align: center;
+                height: 400px;
+                border-radius: 10px;">
+                    <h1 class="titulo">
+                        Trabalhe conosco
+                    </h1>
+                </div>
+            </div>
+           
+        </div>
 
-        </div>
-        <div class="cadastro" name="cadastro" id="cadastro">
-            <h1 class="titulo" style="position:absolute;"> Quero me cadastrar</h1>
-            <div class="caixa-conteudo2" style="display: flex;">
-                <div class="contratante">
-                    <h1 class="titulo"> Quero contratar </h1>
-                    <p> Cadastre sua empresa ou até você que deseja apenas contratar serviços </p>
-                    <button><a href="register.html" style="text-decoration: none; color: white;">Cadastre-se</a></button>
-                </div>
-            
-                <div class="freelance">
-                    <h1 class="titulo" >Quero ser Freelance</h1>
-                    <p>Quero procurar e receber propostas de emprego</p>
-                    <button><a href="register.html" style="text-decoration: none; color: white;">Cadastre-se</a></button>
-                </div>
+        <div class="atendimento" id="atendimento" name="atendimento"><!-- Atendimento -->
+            <h1 class="titulo">Ficou com alguma dúvida? Como podemos ajudar?</h1>
+            <div class="caixa-conteudo2" style="display: flex; align-content: stretch; justify-content: space-evenly; margin: 30px auto">
+                    <div class="atendimento-box">
+                        <h3>Já sou cliente ou profissional</h3>
+                        <p style="margin-top:24px">Dúvidas, problemas ou solicitações em geral</p>
+                        <span style="color: var(--background-color)">Atendimento 24h todos os dias</span>
+
+                        <h4>0000-0000</h4>
+                        <p>Capitais e regiões metropolitanas</p>
+
+                        <h4>0800 000 0000</h4>
+                        <p>Demais regiões</p>   
+
+                         <button><i class="fa fa-comment"></i> Inicie um chat</button>
+                        <button style="margin-left: 5px;"><i class="fa fa-whatsapp"></i> Envie um WhatsApp</button>
+
+                        <p style="margin-top:24px">Se ainda preferir, nos envie um e-mail para:</p>
+                        <span style="font-weight: bold; margin-top: 10px">ajuda@freela.com.br</span>
+                    </div>
+                    <div class="atendimento-box-rev">
+                        <h3>Quero ser parceiro</h3>
+                        <p style="margin-top:24px">Dúvidas, problemas ou solicitações em geral</p>
+                        <span style="color: var(--background-color)">Atendimento 24h todos os dias</span>
+    
+                        <h4>0000-0000</h4>
+                        <p>Capitais e regiões metropolitanas</p>
+    
+                        <h4>0800 000 0000</h4>
+                        <p>Demais regiões</p>   
+    
+                         <button><i class="fa fa-comment"></i> Inicie um chat</button>
+                        <button style="margin-left: 5px;"><i class="fa fa-whatsapp"></i> Receba um WhatsApp</button>
+    
+                        <p style="margin-top:24px">Se ainda preferir, nos envie um e-mail para:</p>
+                        <span style="font-weight: bold; margin-top: 10px; color: var(--primary-color-100);">ajuda@freela.com.br</span>
+                    </div>
             </div>
-        </div>
-        <section class="mapa">
-            <h1 class="titulo">Nossa localização</h1>
-            <p>Caso você deseja nos fazer uma visita, aqui está o nosso QG!</p>
-            <div class="mapa-box">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1865.0174738363514!2d-53.741978366232644!3d-24.73209146444405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3958130f9dfcd%3A0xca95902a8ada2ad9!2sAssocia%C3%A7%C3%A3o%20Comercial%20e%20Empresarial%20de%20Toledo!5e0!3m2!1spt-BR!2sbr!4v1626202199320!5m2!1spt-BR!2sbr"
-                    width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>
+        </div> <!--END Atendimento-->
     </main>
-
+    
     <footer>
-
+        <div class="caixa-footer">
+            <div class="footer-socialmedia">
+                <h1 class="titulo" style="width: 950px; text-align: left; color: var(--primary-color-50)">Freela</h1>
+                <div>
+                    <a href="error.html"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="error.html"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="error.html"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="error.html"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href="error.html"><i class="fa fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="footer-freela">
+                <div class="footer-title-name">Freela</div>
+                <a href="#sobrenos">Porque a Freela</a>
+                <a href="error.html">Trabalhe conosco</a>
+                <a href="error.html">Parecerias</a>
+                <a href="error.html">Investidores</a>
+            </div>
+            <div class="footer-atendimento">
+                <div class="footer-title-name">Atendimento</div>
+                <a href="error.html">Entre em Contato</a>
+                <a href="error.html">Central de Ajuda</a>
+                <a href="error.html">Já sou cadastrado</a>
+                <a href="error.html">Seja nosso parceiro</a>
+            </div>
+            <div class="footer-institucional">
+                <div class="footer-title-name">institucional</div>
+                <a href="error.html">Segurança</a>
+                <a href="error.html">Contrato</a>
+                <a href="error.html">Demonstrações Financeiras</a>
+                <a href="error.html">Portal de Privacidade</a>
+                <a href="error.html">Aviso de Privacidade</a>
+                <a href="error.html">Política de Segurança</a>
+                <a href="error.html">Política de Cokiees</a> 
+            </div>
+            <div class="footer-downloads" style="margin-left: 500px;">
+                <div class="footer-title-name" style="text-align:center;">Downloads</div>
+                <a href="error.html"><img style="width: 60px; height: 60px; margin-top: 5px;" src="imagens/google-play-brands.svg"/></a>
+                <a href="error.html"><img style="width: 60px; height: 60px; margin-top: 5px;" src="imagens/app-store-ios-brands.svg"/></a>
+            </div>
+        </div>
     </footer>
+
     <script>
         $('.container').owlCarousel({
             loop: true,
