@@ -42,6 +42,9 @@ html {
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
 }
+a {
+    text-decoration: none;
+}
 
 body {
     background-color: var(--background-color);
@@ -50,43 +53,6 @@ body {
 li {
     color: var(--font-color);
 }
-
-/* Titles */
-    /* pr == the element color is purple
-       sc == the element color is white
-     */
-    h1.pr-title{
-        font-size: 2.5rem;
-        color: var(--secondary-color-800);
-        font-weight: bold;
-        text-align: center;
-    }
-
-    h1.sc-title{
-        font-size: 2.5rem;
-        color: var(--secondary-color-50);
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .pr-link-title{
-        color: var(--secondary-color-800);
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 54px;
-        letter-spacing: 1px;
-        text-decoration: none;
-    }
-
-    .sc-link-title{
-        color: var(--secondary-color-50);
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 54px;
-        letter-spacing: 1px;
-        text-decoration: none;
-    }
-
 
 /* Buttons */
     /*  */
@@ -289,7 +255,114 @@ li {
         letter-spacing: 1.5px;
     }
 
-/* Estilização do Cabeçalho */
+/* Boxes */
+
+    div.box{
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div.section {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding: 20px
+    }
+
+    .section a {
+        text-decoration: none;
+    }
+
+    .section a i{
+        color: var(--secondary-color-900);
+        margin: 40px;
+
+        display: flex;
+        justify-content: flex-end;
+
+        animation-duration: 5s; 
+        animation-name: jump;
+        animation-iteration-count: infinite;
+    }
+    @keyframes jump {
+        0% { transform: translate(-50%, -50%);}
+        50% { transform: translate(-50%, -150%); }
+        100% { transform: translate(-50%, -50%);}
+    }
+
+    .sub-section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: baseline;  
+    }
+    
+    .sub-section a
+    {
+        margin: 6px 0;
+        color: var(--secondary-color-50);
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    div.tiny-box {
+        box-sizing: border-box;
+        text-align: center;
+        width: 200px;
+        margin: 10px 10px;
+    }
+
+    .out-box{
+        box-sizing: border-box;
+        padding: 40px;
+        width: 550px;
+        border-radius: 10px;
+        border: 2px solid var(--secondary-color-200 );
+    }
+
+    .cont-box{
+        box-sizing: border-box;
+        background: var(--secondary-color-800);
+        padding: 40px;
+        width: 550px;
+        border-radius: 10px;
+        border: 2px solid var(--secondary-color-800);
+    }
+
+    div.content-text{
+        width: 600px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    
+/* Effects */
+    .gradient{
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(235,193,222,1) 100%);
+    }
+
+    .shadow {
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px 0px var(--shadow-500);
+        background: var(--secondary-color-800);
+    }
+
+/* Icons */
+    .fa-user, .fa-user-plus  {
+        margin-right: 10px;
+    }
+
+    .fa-whatsapp, .fa-comment {
+        margin: 0 5px;
+    }
+
+/* -------------- Estilização do Cabeçalho ------------ */
 header {
     box-sizing: border-box;
     width: 100%;
@@ -319,69 +392,7 @@ nav a {
     text-decoration: none;
 }
 
-.fa-user, .fa-user-plus  {
-    margin-right: 10px;
-}
-
-
-/* Estilização do conteúdo main da página */
-
-div.content-text{
-    width: 600px;
-    margin-top: 40px;
-    margin-left: 20px;
-}
-
-div.box{
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.shadow {
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px 0px var(--shadow-500);
-    background: var(--secondary-color-800);
-}
-
-div.section {
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    padding: 20px
-}
-
-.section a {
-    text-decoration: none;
-}
-
-.section a i{
-    color: var(--secondary-color-900);
-    margin: 40px;
-
-    display: flex;
-    justify-content: flex-end;
-
-    animation-duration: 5s; 
-    animation-name: jump;
-    animation-iteration-count: infinite;
-}
-@keyframes jump {
-    0% { transform: translate(-50%, -50%);}
-    50% { transform: translate(-50%, -150%); }
-    100% { transform: translate(-50%, -50%);}
-}
-
-.gradient{
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(235,193,222,1) 100%);
-}
-
+/* -------------- Estilização do Main ------------ */
 article.empresa{
     box-sizing: border-box;
     width: 45%;
@@ -441,8 +452,6 @@ article.freelancer {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
-
-/* ANIMAÇÃO DO ICONE - SOBRE NÓS */
 
 /* CSS CATEGORIAS */
 div.categorias {
@@ -544,13 +553,7 @@ div.categorias {
     color: var(--secondary-color-50);
 }
 
-div.tiny-box {
-    box-sizing: border-box;
-    text-align: center;
-    width: 200px;
-    margin: 10px 10px;
-}
-
+/* --------- Estilização do Footer ---------- */
 footer  {
     border-top: 1px solid var(--secondary-color-300);
     height: auto;
@@ -586,20 +589,7 @@ footer  {
     color: var(--primary-color-50)
 }
 
-.sub-section{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: baseline;  
-}
 
-.sub-section a
-{
-    margin: 6px 0;
-    color: var(--secondary-color-50);
-    font-size: 14px;
-    text-decoration: none;
-}
 .footer-downloads a {
     margin-left:10px;
 }
@@ -611,23 +601,3 @@ footer  {
     text-transform: uppercase;
 }
 
-.out-box{
-    box-sizing: border-box;
-    padding: 40px;
-    width: 550px;
-    border-radius: 10px;
-    border: 2px solid var(--secondary-color-200 );
-}
-
-.fa-whatsapp, .fa-comment {
-    margin: 0 5px;
-}
-
-.cont-box{
-    box-sizing: border-box;
-    background: var(--secondary-color-800);
-    padding: 40px;
-    width: 550px;
-    border-radius: 10px;
-    border: 2px solid var(--secondary-color-800);
-}
