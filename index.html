@@ -20,8 +20,8 @@
 
 <body>
     <header> <!-- Header -->
-        <div class="box">
-            <h1 class="headline2"><a  href="#apresentacao">Freela</a></h1>
+        <div class="box-large">
+            <a href="#apresentacao"><img src="imagens/logo2.png"></a>
             <nav>
                 <ul>
                     <li><a class="headline6" href="#comofunciona">Como funciona?</a></li>
@@ -38,18 +38,19 @@
         </div>
     </header> <!--END Header -->
     <main>
-        <div class="section" id="apresentacao" name="apresentacao">
-            <div class="box" style="display: flex; align-items: flex-start; flex-direction: row; flex-wrap: nowrap; align-content: space-between;">
-                <img class="big-img" src="imagens/apresentação.png"/>
+        <div class="section" id="apresentacao" name="apresentacao" style="margin-bottom: 75px;">
+            <div class="box-large" style="display: flex; align-items: flex-start; flex-direction: row; flex-wrap: nowrap; align-content: space-between;">
+                <img class="big-img" src="imagens/rocket.png"/>
+                <!-- <a href="https://br.freepik.com/vetores/espaco">Espaço vetor criado por stories - br.freepik.com</a> -->
                 <div class="content-text">   
-                    <h1 class="headline3 purple" style="margin: 25px 0">A Freela, é a solução em suas mãos!</h1>
-                    <p class="body purple" style="text-align: justify;"> através do nosso aplicativo você encontra profissionais freelancers, dispostos a solucionar 
+                    <h1 class="headline3 purple center" style="margin: 25px 0">A Freela, é a solução em suas mãos!</h1>
+                    <p class="body purple justified" style="text-align: justify;"> através do nosso aplicativo você encontra profissionais freelancers, dispostos a solucionar 
                         seu problema, na palma da sua mão ou no seu computador, você escolhe
                     </p>
                 </div> 
             </div>
         </div>
-        <div class="categorias" style="clear:both"> <!-- Categorias -->
+        <div class="categorias" style="clear:both; margin-bottom: 75px;"> <!-- Categorias -->
             <h1 class="headline3 purple center">Áreas de atuação</h1>
             <div class="container owl-carousel"> <!-- Container dos Cards-->
                 <div class="card"> <!-- Card de Saúde -->
@@ -156,9 +157,10 @@
                 </div><!--END Card Serviços Domésticos-->
             </div> <!--End Container dos Cards-->
         </div> <!--END Categorias-->
-        <div class="section" style="background: var(--secondary-color-100);display: flex; flex-direction: column;" id="comofunciona" name="comofunciona"> <!-- Como funciona -->
-            <div class="box" style="justify-content: center;"><!-- Como funciona para a empresa -->
-                <img class="normal-img" src="imagens/empresa.png" />
+        <div class="section" style="display: flex; flex-direction: column; margin-bottom: 25px;" id="comofunciona" name="comofunciona"> <!-- Como funciona -->
+            <div class="box-medium" style="justify-content: center; align-items: flex-start;"><!-- Como funciona para a empresa -->
+                <img class="normal-img" src="imagens/empreendedores.png" />
+                <!-- <a href="https://br.freepik.com/vetores/apresentacao">Apresentação vetor criado por stories - br.freepik.com</a> -->
                 <article class="empresa">
                     <h1 class="headline4 purple center">Para você empreendedor</h1>
                     <p class="body1 purple justified">Utilizando nosso aplicativo você conseguirá procurar e encontrar os melhores profissionais o
@@ -166,30 +168,99 @@
                     </p>
                 </article>
             </div> <!-- END Como funciona para a empresa -->
-            <div class="box" style="justify-content: center; flex-wrap: wrap; justify-content: center;"> <!-- Beneficios -->
-                <div class="tiny-box">
-                    <img   class="tiny-img"  src="imagens/price-tag.png"/>
-                    <span class="body2 purple" style="display: block;">Você define o preço do serviço</span>
-                </div>
-                <div class="tiny-box">
-                    <img  class="tiny-img"  src="imagens/sand-clock.png"/>
-                    <span class="body2 purple" style="display: block;">Estipula o tempo da tarefa</span>
-                </div>
-                <div class="tiny-box">
-                    <img  class="tiny-img"  src="imagens/requisitos.png"/>
-                    <span class="body2 purple" style="display: block;">Pode definir requisitos para o serviço</span>
-                </div>
-                <div class="tiny-box">
-                    <img  class="tiny-img"  src="imagens/feedback.png"/>
-                    <span class="body2 purple"style="display: block;">Feedback sobre o Freelancer</span>
-                </div>
+            <div class="box-medium" style="width:800px; display: flex; flex-wrap: wrap; align-content: stretch; justify-content: center; margin-bottom: 25px;"> <!-- Beneficios -->
+                <div class="cards">
+                    <div class="card2">
+                        <div class="card__image-holder">
+                            <img class="card__image" src="imagens/price.jpg" alt="wave" />
+                            <!-- <a href="https://br.freepik.com/vetores/negocio">Negócio vetor criado por stories - br.freepik.com</a> -->
+                        </div>
+                        <div class="card-title">
+                            <a href="#" class="toggle-info btn">
+                                <span class="left"></span>
+                                <span class="right"></span>
+                            </a>
+                            <h2 class="headline6 purple">
+                                Defina o preço do serviço
+                                <small class="body1 purple">...</small>
+                            </h2>
+                        </div>
+                        <div class="card-flap flap1">
+                            <div class="card-description body2 purple justified">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                            </div>
+                        </div>
+                    </div>
 
-                <p class="caption purple">
-                    &#42 E se você achou um freelancer fora da curva, contrate-o. Nunca se sabe se você terá a mesma
-                    oportunidades novamente </p>
-                </p>
-            </div> <!--END Beneficios -->
-            <div class="box" style="justify-content: center;"> <!-- Como funciona para o Frelancer -->
+                    <div class="card2">
+                        <div class="card__image-holder">
+                            <img class="card__image" src="imagens/calendar.jpg" alt="wave" />
+                            <!-- <a href="https://br.freepik.com/vetores/calendario">Calendário vetor criado por stories - br.freepik.com</a> -->
+                        </div>
+                        <div class="card-title">
+                            <a href="#" class="toggle-info btn">
+                                <span class="left"></span>
+                                <span class="right"></span>
+                            </a>
+                            <h2 class="headline6 purple">
+                                Estipule o tempo
+                                <small class="body1 purple">...</small>
+                            </h2>
+                        </div>
+                        <div class="card-flap flap1">
+                            <div class="card-description  body2 purple justified">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card2">
+                        <div class="card__image-holder">
+                            <img class="card__image" src="imagens/requisitos.jpg" alt="wave" />
+                            <!-- <a href="https://br.freepik.com/vetores/pessoas">Pessoas vetor criado por stories - br.freepik.com</a> -->
+                        </div>
+                        <div class="card-title">
+                            <a href="#" class="toggle-info btn">
+                                <span class="left"></span>
+                                <span class="right"></span>
+                            </a>
+                            <h2  class="headline6 purple">
+                                Defina Requisitos
+                                <small class="body1 purple">...</small>
+                            </h2>
+                        </div>
+                        <div class="card-flap flap1">
+                            <div class="card-description  body2 purple justified"">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card2">
+                        <div class="card__image-holder">
+                            <img class="card__image" src="imagens/addfriends.jpg" alt="wave" />
+                            <!-- <a href="https://br.freepik.com/vetores/pessoas">Pessoas vetor criado por stories - br.freepik.com</a> -->
+                        </div>
+                        <div class="card-title">
+                            <a href="#" class="toggle-info btn">
+                                <span class="left"></span>
+                                <span class="right"></span>
+                            </a>
+                            <h2  class="headline6 purple">
+                                Dê feedbacks
+                                <small class="body1 purple ">...</small>
+                            </h2>
+                        </div>
+                        <div class="card-flap flap1">
+                            <div class="card-description  body2 purple justified">
+                            This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div> <!--END Beneficios-->
+            <div class="box-medium" style="justify-content: center;align-items: flex-start;"> <!-- Como funciona para o Frelancer -->
                 </article>
                 
                 <article class="freelancer">
@@ -197,49 +268,125 @@
                     <p class="body1 purple justified">Aqui você encontrar as mais diferenciadas oportunidades de trabalho</p>
                 </article>
                 <img class="normal-img" src="imagens/freelancer.png" />
+                <!-- <a href="https://br.freepik.com/vetores/projeto">Projeto vetor criado por stories - br.freepik.com</a> -->
             </div> <!--END Como funciona para o Frelancer -->
-                <div class="box" style="display: flex; flex-wrap: wrap; align-content: stretch; justify-content: center;"> <!-- Beneficios -->
-                    <div class="tiny-box">
-                        <img class="tiny-img" src="imagens/select.png"/>
-                        <span class="body2 purple"style="display: block;">Você escolhe quais serviços deseja realizar</span>
+            <div class="box-medium" style="width:800px; display: flex; flex-wrap: wrap; align-content: stretch; justify-content: center;"> <!-- Beneficios -->
+                    <div class="cards">
+                        <div class="card2">
+                            <div class="card__image-holder">
+                                <img class="card__image" src="imagens/Emails.jpg" alt="wave" />
+                                <!-- <a href="https://br.freepik.com/vetores/tecnologia">Tecnologia vetor criado por stories - br.freepik.com</a> -->
+                            </div>
+                            <div class="card-title">
+                                <a href="#" class="toggle-info btn">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </a>
+                                <h2  class="headline6">
+                                    Receba propostas
+                                    <small class="body1">...</small>
+                                </h2>
+                            </div>
+                            <div class="card-flap flap1">
+                                <div class="card-description  body2 justified">
+                                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card2">
+                            <div class="card__image-holder">
+                                <img class="card__image" src="imagens/coins.jpg" alt="wave" />
+                                <!-- <a href="https://br.freepik.com/vetores/dinheiro">Dinheiro vetor criado por stories - br.freepik.com</a> -->
+                            </div>
+                            <div class="card-title">
+                                <a href="#" class="toggle-info btn">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </a>
+                                <h2  class="headline6 purple">
+                                    100% do valor é seu
+                                    <small class="body1 purple">...</small>
+                                </h2>
+                            </div>
+                            <div class="card-flap flap1">
+                                <div class="card-description  body2 purpe justified">
+                                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card2">
+                            <div class="card__image-holder">
+                                <img class="card__image" src="imagens/talk.jpg" alt="wave" />
+                                <!-- <a href="https://br.freepik.com/vetores/midia-social">Mídia social vetor criado por stories - br.freepik.com</a> -->
+                            </div>
+                            <div class="card-title">
+                                <a href="#" class="toggle-info btn">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </a>
+                                <h2  class="headline6 purple">
+                                    Negocie valores
+                                    <small class="body1 purple">...</small>
+                                </h2>
+                            </div>
+                            <div class="card-flap flap1">
+                                <div class="card-description  body2 purple justified">
+                                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card2">
+                            <div class="card__image-holder">
+                                <img class="card__image" src="imagens/portifolio.jpg" alt="wave" />
+                                <!-- <a href="https://br.freepik.com/vetores/pessoas">Pessoas vetor criado por stories - br.freepik.com</a> -->
+                            </div>
+                            <div class="card-title">
+                                <a href="#" class="toggle-info btn">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </a>
+                                <h2  class="headline6 purple">
+                                    Mostre seu portifolio 
+                                    <small class="body1 purple">...</small>
+                                </h2>
+                            </div>
+                            <div class="card-flap flap1">
+                                <div class="card-description  body2 purple justified">
+                                This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="tiny-box">
-                        <img class="tiny-img" src="imagens/negociar.png"/>
-                        <span class="body2 purple"style="display: block;">Pode negociar preços</span>
-                    </div>
-                    <div class="tiny-box">
-                        <img  class="tiny-img" src="imagens/resumo.png"/>
-                        <span class="body2 purple"style="display: block;">Mostrar o seu portifólio para todos</span>
-                    </div>
-                    <div class="tiny-box">
-                        <img class="tiny-img" src="imagens/money-bag.png"/>
-                        <span class="body2 purple"style="display: block;">100% do dinheiro do serviço é seu</span>
-                    </div>
-                </div> <!--END Beneficios-->
+            </div> <!--END Beneficios-->
         </div> <!--END Como funciona-->
         <div class="section" name="sobrenos" id="sobrenos">
-            <div class="box anime shadow" style="display: flex; flex-direction: row; align-items: flex-start;">
-                <div style="background: var(--secondary-color-800); border-radius: 15px 0 0 15px; padding: 10px;">
-                    <img class="normal-img" src="imagens/polvo.png"/>
+            <div class="box-medium anime" style="display: flex; flex-direction: row; align-items: flex-start;">
+                <div style="border-radius: 15px 0 0 15px; padding: 10px;">
+                    <img class="normal-img" src="imagens/polvo.jpg"/>
                 </div>
                 <div>
-                    <h1 class="headline4 white center" style="margin-top: 10px;">A Freela</h1>
-                    <p class="body1 white justified" style="margin-top: 10px; padding: 10px"> 
+                    <h1 class="headline4 purple center" style="margin-top: 10px;">A Freela</h1>
+                    <p class="body1 purple justified" style="margin-top: 10px; padding: 10px"> 
                         A Freela começou na idéa de amigos, acreditamos que as oportunidades de trabalho existem, e
                         temos como nosso objetivo conectar profissionais e empreendedores através da nossa plataforma</p>
                 </div>
             </div>
             
-            <a href="#missao"><i class="fa fa-angle-double-down fa-2x"></i></a>
+            <a href="#missao" id="next"><i class="fa fa-angle-double-down fa-2x"></i></a>
 
             <div class="section anime" name="missao" id="missao">
-                <div class="box  shadow" style="display: flex; flex-direction: row; align-items: flex-start;">
+                <div class="box-medium" style="display: flex; flex-direction: row; align-items: flex-start;">
                     <div style="background: var(--main-color); border-radius: 15px 0 0 15px; padding: 10px;">
-                        <img class="normal-img" src="imagens/alvo.png"/>
+                        <img class="normal-img" src="imagens/missao.png"/>
+                        <!-- <a href="https://br.freepik.com/vetores/seta">Seta vetor criado por stories - br.freepik.com</a> -->
                     </div>
                     <div>
-                        <h1 class="headline4 white center" style="margin-top: 10px;">Qual a nossa MISSÃO? </h1>
-                        <p class="body1 white justified"  style="margin-top: 10px; padding: 10px"> 
+                        <h1 class="headline4 purple center" style="margin-top: 10px;">Qual a nossa MISSÃO? </h1>
+                        <p class="body1 purple justified"  style="margin-top: 10px; padding: 10px"> 
                             Oferecer a sociedade uma plataforma totalmente segura e confiável para aumentar,
                             desenvolver e facilitar a relação entre pessoas e empresas conectando-os</p>
                     </div>
@@ -247,36 +394,38 @@
                 </div>
             </div>
 
-            <a href="#visao"><i class="fa fa-angle-double-down fa-2x"></i></a>
+            <a href="#visao" id="next"><i class="fa fa-angle-double-down fa-2x"></i></a>
 
             <div class="section anime" name='visao' id="visao">
-                <div class="box shadow" style="display: flex;
+                <div class="box-medium" style="display: flex;
                 flex-direction: row;
                 align-items: flex-start;">
-                    <div style="background: var(--main-color); border-radius: 15px 0 0 15px; padding: 10px;">
-                        <img class="normal-img" src="imagens/visao.png"/>
+                    <div style= "border-radius: 15px 0 0 15px; padding: 10px;">
+                        <img class="normal-img" src="imagens/jornada.png"/>
+                        <!-- <a href="https://br.freepik.com/vetores/viagem">Viagem vetor criado por stories - br.freepik.com</a> -->
                     </div>
                     <div>
-                        <h1 class="headline4 white center" style="margin-top: 10px;">A nossa VISÃO</h1>
-                        <p class="body1 white justified" style="margin-top: 10px; padding: 10px"> 
+                        <h1 class="headline4 purple center" style="margin-top: 10px;">A nossa VISÃO</h1>
+                        <p class="body1 purple justified" style="margin-top: 10px; padding: 10px"> 
                             Possuir uma plataforma de confiança e transparência para impulsionar o mercado de
                             trabalho</p>
                     </div>
                 </div>  
             </div>
 
-            <a href="#valores"><i class="fa fa-angle-double-down fa-2x"></i></a>
+            <a href="#valores" id="next"><i class="fa fa-angle-double-down fa-2x"></i></a>
             
             <div class="section anime" name="valores" id="valores">
-                <div class="box shadow" style="display: flex;
+                <div class="box-medium" style="display: flex;
                 flex-direction: row;
                 align-items: flex-start;">
-                    <div style="background: var(--main-color); border-radius: 15px 0 0 15px; padding: 10px;">
-                        <img class="normal-img" src="imagens/target.png"/>
+                    <div style="border-radius: 15px 0 0 15px; padding: 10px;">
+                        <img class="normal-img" src="imagens/rocket2.jpg"/>
+                        <!-- <a href="https://br.freepik.com/vetores/galaxia">Galáxia vetor criado por stories - br.freepik.com</a> -->
                     </div>
                     <div>
-                        <h1 class="headline4 white center" style="margin-top: 10px;">Os nossos VALORES</h1>
-                        <p class="body1 white justified"  style="margin-top: 10px; padding: 10px"> 
+                        <h1 class="headline4 purple center" style="margin-top: 10px;">Os nossos VALORES</h1>
+                        <p class="body1 purple justified"  style="margin-top: 10px; padding: 10px"> 
                             A Freela tem como base fundamental intrínseca o foco no cliente tanto com os
                             empreendedores como freelancers, proporcionando uma experiência e suporte fora da
                             curva. Contribuir, ajudar e facilitar a comunicação entre os trabalhadores e as empresas
@@ -284,19 +433,18 @@
                     </div>
                 </div>  
             </div>
-            <a href="#atendimento"><i class="fa fa-angle-double-down fa-2x"></i></a>
+            <a href="#atendimento"  id="next"><i class="fa fa-angle-double-down fa-2x"></i></a>
         </div>
 
         <div class="section gradient" name="trabalheconosco" id="trabalheconosco">
-            <div class="box" style="display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+            <div class="box-medium" style="display: flex; align-items: center; justify-content: center; flex-direction: row;">
                 <div>
-                    <img style="width: 500px; height: 500px; position: relative; left: 200px;" src="imagens/Wavy_Bus-32_Single-05.png">
-    
+                    <img style="width: 500px; height: 500px;" src="imagens/girl.jpg">
+                    <!-- <a href="https://br.freepik.com/fotos/verao">Verão foto criado por benzoix - br.freepik.com</a> -->
                 </div>
-                <div style="background: var(--secondary-color-800); width: 500px; text-align: center; height: 400px; border-radius: 10px;">
-                    <h1 class="headline4 white center" style="margin-top: 15px;">
-                        Trabalhe conosco
-                    </h1>
+                <div style="background: var(--primary-color-400); width: 500px; text-align: center; height: 500px;">
+                    <h1 class="headline4 white center" style="margin-top: 15px;">Trabalhe conosco</h1>
+                    <button class="sc-con-btn">Confira nossas vagas</button>
                 </div>
             </div>
            
@@ -304,37 +452,35 @@
 
         <div class="section" style="background: var(--secondary-color-100);" id="atendimento" name="atendimento"><!-- Atendimento -->
             <h1 class="headline3 purple center" style="margin-bottom: 30px;">Ficou com alguma dúvida? Como podemos ajudar?</h1>
-            <div class="box" style="display: flex; align-content: stretch; justify-content: space-evenly;">
+            <div class="box-large" style="display: flex; align-content: stretch; justify-content: space-evenly;">
                     <div class="out-box">
-                        <h3 class="headline4 purple center">Já sou cliente ou profissional</h3>
+                        <h3 class="headline4 purple center" style="font-weight:900">Já sou cliente ou profissional</h3>
                         <p class="body1 purple left" style="margin-top:24px">Dúvidas, problemas ou solicitações em geral</p>
-                        <span class="body2 purple left" style="margin-top: 8px">Atendimento 24h todos os dias</span>
 
-                        <h4 class="headline6" style="margin-top: 24px">0000-0000</h4>
+                        <h4 class="headline4 purple" style="margin-top: 48px; font-weight: 600;">0000-0000</h4>
                         <p class="body1 purple left" style="margin-top: 6px">Capitais e regiões metropolitanas</p>
 
-                        <h4 class="headline6" style="margin-top: 24px">0800 000 0000</h4>
+                        <h4 class="headline4 purple" style="margin-top: 48px; font-weight: 600">0800 000 0000</h4>
                         <p class="body1 purple left" style="margin-top: 6px">Demais regiões</p>   
 
-                        <button class="pr-out-btn" style="margin-top: 24px"><i class="fa fa-comment"></i> Inicie um chat</button>
-                        <button class="pr-con-btn"style="margin-left: 5px; margin-top: 24px"><i class="fa fa-whatsapp"></i> Envie um WhatsApp</button>
+                        <button class="pr-out-btn" style="margin-top: 48px"><i class="fa fa-comment"></i> Inicie um chat</button>
+                        <button class="pr-con-btn"style="margin-left: 5px; margin-top: 48px"><i class="fa fa-whatsapp"></i> Envie um WhatsApp</button>
 
                         <p class="body1 purple left" style="margin-top:24px">Se ainda preferir, nos envie um e-mail para:</p>
                         <span class="body2 purple left" style="margin-top: 6px">ajuda@freela.com.br</span>
                     </div>
                     <div class="cont-box">
-                        <h3 class="headline4 white center">Quero ser parceiro</h3>
+                        <h3 class="headline4 white center" style="font-weight: 900">Quero ser parceiro</h3>
                         <p class="body1 white left" style="margin-top:24px">Dúvidas, problemas ou solicitações em geral</p>
-                        <span class="body2 white left">Atendimento 24h todos os dias</span>
     
-                        <h4 class="headline6" style="margin-top:24px">0000-0000</h4>
+                        <h4 class="headline4 white" style="margin-top:48px; font-weight: 600">0000-0000</h4>
                         <p class="body1 white left" style="margin-top: 6px">Capitais e regiões metropolitanas</p>
 
-                        <h4 class="headline6" style="margin-top:24px">0800 000 0000</h4>
+                        <h4 class="headline4 white" style="margin-top:48px; font-weight: 600">0800 000 0000</h4>
                         <p class="body1 white left" style="margin-top: 6px">Demais regiões</p>
     
-                        <button class="sc-out-btn" style="margin-top: 24px"><i class="fa fa-comment"></i> Inicie um chat</button>
-                        <button class="sc-con-btn"style="margin-left: 5px; margin-top: 24px"><i class="fa fa-whatsapp"></i> Receba um WhatsApp</button>
+                        <button class="sc-out-btn" style="margin-top: 48px"><i class="fa fa-comment"></i> Inicie um chat</button>
+                        <button class="sc-con-btn"style="margin-left: 5px; margin-top: 48px"><i class="fa fa-whatsapp"></i> Receba um WhatsApp</button>
     
                         <p class="body1 white left" style="margin-top:24px">Se ainda preferir, nos envie um e-mail para:</p>
                         <span class="body2 white left">ajuda@freela.com.br</span>
@@ -395,6 +541,7 @@
             autoplayHoverPause: true,
 
         });
+       
     </script>
 </body>
 
