@@ -1,24 +1,28 @@
 
-/* Cores: 
-    paleta de cores padrão do site
-        100%: #7a209c
-        75%: #89609e 
-        50%: #ec70e7
-        25%: #ffd2f2
-*/
-
 /* Geral */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica;
-    color: #323232;
+    color: var(--secondary-color-50);
     border: none;
+}
+:root {
+    --secondary-color-50: #f7e6f1;
+    --secondary-color-100: #ebc1de;
+    --secondary-color-200: #de98c9;
+    --secondary-color-300: #cf6fb4;
+    --secondary-color-400: #c34fa4;
+    --secondary-color-500: #b82f97;
+    --secondary-color-600: #ab2a91;
+    --secondary-color-700: #9a228a;
+    --secondary-color-800: #8b1c83;
+    --secondary-color-900: #701077;   
 }
 
 html {
-    height: 100%
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 a {
     font-size: .8rem;
@@ -26,41 +30,50 @@ a {
 }
   
 a:hover {
-    color: #7b209B;
+    color: var(--secondary-color-100);
   }
+
+p{
+    letter-spacing: 0.5px;
+}
 
 body {
     height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-
-    background: rgb(158,56,176);
-    background: radial-gradient(circle, rgba(158,56,176,1) 0%, rgba(122,32,156,1) 42%, rgba(109,0,255,1) 100%);
+    background-color: var(--secondary-color-600);
 }
 
 
 /* LOGIN-CONTAINER */
 .login-container {
-    background: #FFFFFF;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 30px;
     margin-top: 15vh; 
-    border-radius: 10px;
     text-align: center;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba(73, 73, 73, 0.37);
+    backdrop-filter: blur( 20px );
+
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 .login-container h1, h1 a{
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0.25px;
     margin-bottom: 20px;
-    color: #7a209c;
+    color: var(--secondary-color-50);
     cursor: pointer;
 }
 /* FORMULARIO Login e Senha */
 form {
-    margin-top: 30p;
+    margin-top: 30px;
     margin-bottom: 25px;
     width: 100%;
     max-width: 500px;
@@ -72,24 +85,21 @@ input, button {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-
-    border: none;
-    border-bottom: 2px solid black;    
+    border: none;    
     width: 100%;
     background-color: transparent;
     outline: none;
-
     font-size: 1em;
-    
 }
 
 input {
     padding: 10px;
     font-size: 1rem;
+    border-bottom: 2px solid var(--secondary-color-50)
 }
 
 input:focus {
-    border-bottom: 2px solid #7a209c;
+    border-bottom: 2px solid var(--secondary-color-50);
 }
 
 #forgot-pass {
@@ -103,21 +113,25 @@ button {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    border: none;
+    letter-spacing: 1.25px;
     border-radius: 20px;
     margin-top: 20px;
-    color: #ffffff;
-    background: rgb(109,0,255);
+    color: var(--secondary-color-50);
+    background: rgba( 255, 255, 255, 0.15 );
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
     cursor: pointer;
     align-self: center;
 
 }
 
-button:hover {
-    background: rgba(158,56,176,1);
-    transition: 2s;
+button:hover, .fa-linkedin:hover , .fa-facebook-f:hover{
+    background: rgba( 255, 255, 255, 0.3 );
 }
-
 /* Container das redes sociais */
 .social-container {
     margin-bottom: 20px;
@@ -127,22 +141,32 @@ button:hover {
     height: 40px;
     width: 40px;
     line-height: 40px;
-    border-radius: 50%;
-    margin: 5px 5px;
-    color: #FFFFFF;
+    margin: 10px 5px 10px 5px;
+    color: var(--secondary-color-50);
     cursor: pointer;
 }
 
 .fa-facebook-f {
-    background: #3b5998
+    background: rgba(248, 194, 194, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .fa-linkedin {
-    background: #007585
-}
+    background: rgba(248, 194, 194, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 
-.fa-google {
-    background: green;
 }
 
 .register-container p{
@@ -157,6 +181,7 @@ div.input{
 input ~ label {
     position: absolute;
     top: 16px;
+    letter-spacing: 1.25px;
     left: 0;
     transition: 0.4s;
 }
@@ -181,4 +206,78 @@ input:valid ~ label{
 /* Adaptação da página para celulares */
 @media screen and (max-width: 480px){
 
+}
+
+.drop {
+background: rgba(255, 255, 255, 0.3);
+backdrop-filter: blur(10px);
+border-radius: 10px;
+border-left: 1px solid rgba(255, 255, 255, 0.3);
+border-top: 1px solid rgba(255, 255, 255, 0.3);
+box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+position: absolute;
+}
+.drop-1 {
+height: 150px;
+width: 150px;
+top: -15px;
+left: -200px;
+z-index: -1;
+}
+.drop-2 {
+height: 80px;
+width: 80px;
+bottom: -30px;
+right: -40px;
+}
+.drop-3 {
+height: 100px;
+width: 100px;
+bottom: 120px;
+right: -250px;
+z-index: -1;
+}
+.drop-4 {
+height: 120px;
+width: 120px;
+top: -60px;
+right: -60px;
+}
+.drop-5 {
+height: 60px;
+width: 60px;
+bottom: 125px;
+left: -26px;
+z-index: -1;
+}
+
+.drop-7 {
+width: 250px;
+height: 250px;
+left: -75px;
+z-index: -1;
+top: -50px;
+}
+
+.drop-8{
+height: 400px;
+width: 400px;
+z-index: -1;
+bottom: 0;
+left: -100px;
+}
+
+.drop-9{
+width: 350px;
+height: 350px;
+right: 0px;
+top: -100px;
+}
+
+.drop-10{
+width: 300px;
+height: 300px;
+right: 200px;
+bottom: 0;
+z-index: -1;
 }
