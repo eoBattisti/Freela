@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/register.css">
     <title>Freela | Cadastre-se</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -16,12 +25,27 @@
                     <label for="info-pessoais" class="tab-label">Informações Pessoais</label>
                     <div class="tab-content">
                         <form class="formulario">
-                            <label for="nome">Nome Completo</label>
-                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
-                            <label for="data">Data de Nascimento</label>
-                            <input type="date" name="data" id="data" required>
-                            <label for="cpf">CPF</label>
-                            <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+                            <div class="full-box">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                            </div>
+                            <div class="half-box">
+                                <label for="data">Data de Nascimento</label>
+                                <input style="width:175px"type="date" name="data" id="data" required>
+                            </div>
+                            <div class="half-box">
+                                <label for="rg">RG</label>
+                                <input style="width: 175px;"type="text" name="rg" id="rg" placeholder="000.000.000-00" required>
+                            </div>
+                            <div class="half-box">
+                                <label for="cpf">CPF</label>
+                                <input style="width: 175px;"type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+                            </div>
+                            <div class="half-box">
+                                <label for="tel" >Telefone</label>
+                                <input style="width: 175px;" type="phone" id="tel"pacleholder="(00) - 9 0000-0000" required>
+                            </div>
+                            
                             <label for="sexo">Você se identifica sendo do gênero</label>
                             <select name="sexo" id="sexo">
                                 <option value="masculino">Masculino</option>
@@ -35,16 +59,28 @@
                     <input type="radio" name="tabs" class="rd-tabs" id="info-cadastro">
                     <label for="info-cadastro" class="tab-label">Informações Cadastrais</label>
                     <div class="tab-content">
-                        <form>
-                            <label for="email">Email</label>
-                            <input type="text" name=email id=email placeholder="Digite aqui seu Email" required>
-                            <label for="usuario">Usuario</label>
-                            <input type="text" name=usuario id=usuario placeholder="Digite seu usuario" required>
-                            <label for="senha">Senha</label>
-                            <input type="text" name=senha id=senha placeholder="Digite sua senha sua senha" required>
-                            <label for="confirmacao de senha">Confirmação de Senha</label>
-                            <input type="text" name="confirmacao de senha" id=confirmacao_de_senha placeholder="Digite sua senha novamente" required>
-                            <button> Próximo </button>
+                        <form class="formulario">
+                            <div class="full-box">
+                                <label for="email">Email</label>
+                                <input type="text" name=email id=email placeholder="Digite aqui seu Email" required>
+                            </div>
+                            <div class="full-box">
+                                <label for="usuario">Usuario</label>
+                                <input type="text" name=usuario id=usuario placeholder="Digite seu usuario" required>
+                            </div>
+                            <div class="half-box">
+                                <label for="senha">Senha</label>
+                                <input type="text" name=senha id=senha placeholder="Digite sua senha sua senha" required>
+                            </div>
+                            <div class="half-box">
+                                <label for="confirmacao de senha">Confirmação de Senha</label>
+                                <input type="text" name="confirmacao de senha" id=confirmacao_de_senha placeholder="Digite sua senha novamente" required>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="agreement" id="agreement">
+                                <label for="agreement" id="agreement-label">Eu li e aceito os termos de uso</label>
+
+                            </div>
                         </form>
                         
                     </div>
@@ -53,35 +89,40 @@
                     <input type="radio" name="tabs" class="rd-tabs" id="info-financeiras">
                     <label for="info-financeiras" class="tab-label">Informações Financeiras</label>
                     <div class="tab-content">
-                        
+                        <form class="formulario">
+                            <div class="full-box">
+                                <label for="cardNumber">Número do Cartão</label>
+                                <input type="number" name=cardNumber id=cardNumber placeholder="0000-0000-0000-0000" required>
+                            </div>
+                            <div class="full-box">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" name=name id=name placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="half-box">
+                                <label for="validate">Validade</label>
+                                <input type="month" name=validate id=validate placeholder="00/0000" required>
+                            </div>
+                            <div class="half-box">
+                                <label for="cvc">CVC</label>
+                                <input type="number" name=cvc id=cvc placeholder="000" required>
+                            </div>
+                            <div class="full-box" style="display: flex; align-items: center; justify-content: center;">
+                                <button>Registrar</button>
+                            </div>
+                        </form>
                     </div>
                 </li>
               </ul>
 
           </nav>
     </main>
+    <div class="drop drop-1"></div>
+        <div class="drop drop-2"></div>
+        <div class="drop drop-3"></div>
+        <div class="drop drop-4"></div>
+        <div class="drop drop-5"></div>
+        <div class="drop drop-7"></div>
+        <div class="drop drop-8"></div>
+    </div>
 </body>
 </html>
-
-<!-- <form>
-                <label for="nome">Nome Completo</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
-                <label for="data">Data de Nascimento</label>
-                <input type="date" name="data" id="data" required>
-                <label for="cpf">CPF</label>
-                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required>
-                <label for="sexo">Você se identifica sendo do gênero</label>
-                <select name="sexo" id="sexo">
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="outro">Outro</option> 
-                </select>
-                
-            </form> -->
-
-<!-- <label for="telefone">Telefone</label>
-                <input type="tel" name="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX">
-                <Label for="email">E-mail</Label>
-                <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com">
-                <label for="semeail">Confirme seu email</label>
-                <input type="email" name="semail" id="semeail" placeholder="exemplo@exemplo.com"> -->
