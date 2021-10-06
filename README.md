@@ -5,8 +5,8 @@
 The main goal about this project was to present in my Management course in High School as a piece of a theorical start-up that was built. 
 
 ### About the Website
-- The [index](https://github.com/eoBattisti/Freela/blob/master/index.html) is where are all the content about the start-up;
-- The [login](https://github.com/eoBattisti/Freela/blob/master/login.html) page does not have a functionality but represents
+- The [index](https://github.com/eoBattisti/Freela/tree/master/img/pages/index) is where are all the content about the start-up;
+- The [login](https://github.com/eoBattisti/Freela/blob/master/img/pages/login.png) page does not have a functionality but represents
 the opportunity to log-in the system.
 - The [register](https://github.com/eoBattisti/Freela/blob/master/register.html) page to create an account.
 
