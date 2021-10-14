@@ -38,7 +38,10 @@ textarea:focus, input:focus{
 .nav-tabs{
     width: 590px;
     height: 450px;
-    margin: 100px auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background: rgba( 255, 255, 255, 0.15);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur( 4px );
@@ -59,8 +62,6 @@ textarea:focus, input:focus{
 .nav-tabs ul li {
     float: left;
     border-radius: 10px;
-    
-    
 }
 
 .nav-tabs .tab-label{
@@ -76,7 +77,7 @@ textarea:focus, input:focus{
     
 }
 .rd-tabs:checked ~ .tab-label {
-    background-color: rgba( 247, 230, 241, 0.18 );
+    background-color: rgba( 255, 255, 255, 0.18);
 }
 .tab-content {
     display: none;
@@ -118,8 +119,8 @@ label {
 
 input {
     padding: 10px;
-    font-size: .8rem;
-    margin-bottom: 20px;
+    font-size: 1.6vmin;
+    margin-bottom: 15px;
     color: var(--secondary-color-50);
     border-bottom: 1px solid var(--secondary-color-50);
     width: 90%;
@@ -159,7 +160,7 @@ button{
     width: 125px;
     height: 50px;
     margin-top: 25px;
-    font-size: 14px;
+    font-size: 1.8vmin;
     color: var(--secondary-color-50);
     background: rgba( 255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -238,4 +239,35 @@ appearance: auto;
 #agreement, #agreement-label {
 display: inline-block;
 width: auto;
+}
+
+span.error{
+    display: flex;
+    padding: 0;
+    color: red
+}
+span.error.active{
+    color: red;
+    padding: 0.1em;
+    font-size: 1.6vmin;
+}
+
+@media screen and (max-device-width: 1024px){
+    .drop-2 {width: 0; height: 0;}
+    .drop-3 {width: 250px; height: 250px; right: 125px}
+}
+
+@media screen and (max-device-width: 768px){
+    .drop-1 {width: 0; height:0;}
+    .drop-3 {width: 0; height:0;}
+    .drop-4 {width: 0; height:0;}
+    .drop-5 {width: 0; height:0;}
+    .drop-7 {width: 0; height:0;}
+    .drop-8 {width: 0; height:0;}
+}
+
+@media screen and (max-device-width: 425px){
+    .nav-tabs {width: 400px; height: 500px}
+    .tab-label {padding: 8px;}
+    .tab-content {margin-top: 20px;width: 375px; height: 400px;}
 }
